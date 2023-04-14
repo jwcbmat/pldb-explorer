@@ -31,7 +31,7 @@ Follow the steps below to set up and run the project locally:
 - Start the server and client simultaneously with the command npm run dev.
 - Open a web browser and access the address http://localhost:3000 to see the application in action.
 
-# API Endpoints
+## API Endpoints
 
 The PLDB Explorer API has the following endpoints:
 
