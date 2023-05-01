@@ -1,0 +1,12 @@
+@import url("../../global/colors.css");
+
+.searchBar {
+  font-family: 'Inter';
+  height: 40px;
+  width: 200px;
+  padding: 0 40px 0 16px;
+  background-color: var(--white);
+  border: 1px solid var(--black);
+  color: var(--black);
+  outline: none;
+}

@@ -1,43 +1,45 @@
-/* Table.css */
-
 .table-container {
-  max-width: 100%;
-  overflow-x: auto;
+  max-width: 80%;
+  max-height: 500px;
+  overflow: auto;
 }
 
 table {
-  width: 100%;
+  display: block;
   border-collapse: collapse;
-}
-
-thead {
-  background-color: #f8f8f8;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
 }
 
 th,
 td {
-  padding: 10px;
+  font-family: 'Inter';
+  padding: 12px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 th {
+  background-color: #f7f7f7;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #f8f8f8;
+  background-color: #f2f2f2;
 }
 
 tbody tr:hover {
-  background-color: #e0e0e0;
+  background-color: #ddd;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-}
+@media screen and (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
 
-a:hover {
-  text-decoration: underline;
+  th,
+  td {
+    padding: 8px;
+  }
 }

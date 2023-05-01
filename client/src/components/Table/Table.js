@@ -1,9 +1,7 @@
 import React from "react";
+import "./Table.css";
 
 const Table = ({ data }) => {
-  if (!data || Object.keys(data).length === 0) {
-    return <div>Loading...</div>;
-  }
 
   const tableData = Object.entries(data).map(([key, value]) => {
     return (
@@ -32,22 +30,24 @@ const Table = ({ data }) => {
   });
 
   return (
-    <table>
-      <thead>
-        <tr>
-          <th>Title</th>
-          <th>Appeared</th>
-          <th>Type</th>
-          <th>Creators</th>
-          <th>Country</th>
-          <th>Origin Community</th>
-          <th>Wikipedia</th>
-          <th>File Type</th>
-          <th>Is Open Source</th>
-        </tr>
-      </thead>
-      <tbody>{tableData}</tbody>
-    </table>
+    <div className="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Appeared</th>
+            <th>Type</th>
+            <th>Creators</th>
+            <th>Country</th>
+            <th>Origin Community</th>
+            <th>Wikipedia</th>
+            <th>File Type</th>
+            <th>Is Open Source</th>
+          </tr>
+        </thead>
+        <tbody>{tableData}</tbody>
+      </table>
+    </div>
   );
 };
 
